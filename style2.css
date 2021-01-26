@@ -1,5 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: rgb(136, 168, 121);
+    background: linear-gradient(
+    90deg,
+    rgba(136, 168, 121, 1) 0%,
+    rgba(107, 126, 97, 0.8743872549019608) 50%,
+    rgba(136, 168, 121, 1) 100%
+  );
+}
+
+/* HEADER */
+
 nav {
-    background: rgb(116, 111, 111);
+    background: #444;
     height: 58px;
     align-content: center;
 
@@ -16,7 +35,6 @@ nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 2px solid rgba(255, 0, 0, 0.315);
     height: 100%;
 }
 
@@ -26,31 +44,101 @@ nav a {
     text-decoration: none;
 }
 
+li.logo {
+   
+    background: white;
+    font-weight: 600;
+    font-size: 30px;
+    background: url(assets/logo.png) center no-repeat;
+    background-size: cover;
+    
+  }
+
+
+/* NOTRE START-UP */
+
 .trait {
     height: 1px;
-    width: 500px;
-    background-color:grey;
+    width: 50%;
+    background-color: #444;
     margin-left: 15px;
 }
 
 .title-box {
     justify-content: flex-start;
+    margin-top: 35px;
+    margin-left: 15px;
 }
+
+
+h3 {
+    color: #222831;
+}
+
 
 .box-start-up {
     max-height: 300px;
     gap: 30px;
+    padding: 20px;
 }
 
 .box-start-up > img{
-    max-height: 280px;
+    max-height: 290px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.582);
 }
 
-.box-start-up > p{
+.box-start-up > p:first-child{
     text-align: right;
     line-height: 35px;
+    
+}
+ 
+.slide {
+    opacity: 0;
+    transition: ease-in .8s;
+    transform: translateY(-10%) scale(0.95);
+
 }
 
+.slide2 {
+    opacity: 0;
+    transition: ease-in .8s;
+    transform: translateY(10%) scale(0.95);
+}
+
+.translate {
+    transform: translateY(0) scale(0.99999) translateZ(0px);
+    opacity: 1;
+
+}
+
+
+
+.box-start-up > p:last-child {
+    text-align: left;
+    line-height: 35px;
+       
+}
+
+
+/* NOTRE EQUIPE */
+
+
+.box-equipe {
+    padding: 50px;
+}
+
+.box-equipe > p {
+    font-style: italic;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
 
 .associate > img {
     width: 70px;
@@ -59,16 +147,85 @@ nav a {
 
 .associate {
     position: relative;
-   
 }
 
 .associate p {
     position: absolute;
-    top: 85%;
+    text-align: center;
+    top: 100%;
     opacity: 0;
+    font-style: italic;
 
 }
 
 .associate:hover p {
     opacity: 1;
+}
+
+/* NOS VALEURS */
+
+.valeurs {
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.valeur {
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 5%;
+}
+
+.valeur p {
+    text-align: center;
+}
+
+.v1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("https://images.unsplash.com/photo-1595257547890-2191e7d276b4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80");
+}
+
+.v2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("https://images.unsplash.com/photo-1599277062739-e1878f97c79a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1502&q=80");
+}
+
+.v3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("https://images.unsplash.com/photo-1587560699334-bea93391dcef?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80");
+}
+
+/* FOOTER */
+
+.icon-item {
+  text-decoration: none;
+  margin-right: 15px;
+  color: #999999;
+}
+
+.fab {
+  font-size: 25px;
+  margin-right: 15px;
+  transition: all 0.2s ease 0s;
+}
+
+footer a:hover {
+  color: #222222;
+}
+
+footer p {
+  color: #888888;
+}
+
+footer {
+  background-color: #444444;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+  margin-top: 50px;
 }
