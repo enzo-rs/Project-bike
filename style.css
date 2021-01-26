@@ -12,7 +12,7 @@ body {
   /* display: flex;
   justify-content: center;
   align-items: center; */
-  background: #23e3c9;
+  background: #88a879;
 }
 
 /* HEADER */
@@ -35,7 +35,7 @@ header h1 {
 
 /* NAV */
 nav {
-  background: black;
+  background: #444;
   top: 0;
   width: 100%;
   transition: all 0.5s;
@@ -65,6 +65,8 @@ li.logo {
   transition: all 0.5s;
   font-weight: 600;
   font-size: 30px;
+  background: url(assets/logo.png)  center no-repeat;
+  background-size: cover;
 }
 
 nav a {
@@ -95,7 +97,7 @@ main {
   height: 500px;
   border-radius: 10px;
   overflow: hidden;
-  margin: 0 auto;
+  margin: 50px auto 0 auto;
 }
 
 .slides {
@@ -134,7 +136,7 @@ label,
 }
 
 .manual-btn {
-  border: 2px solid #40d3dc;
+  border: 2px solid #88a879;
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
@@ -146,7 +148,7 @@ label,
 }
 
 .manual-btn:hover {
-  background: #40d3dc;
+  background: #88a879;
 }
 
 #radio1:checked ~ .first {
@@ -176,7 +178,7 @@ label,
 }
 
 .navigation-auto div {
-  border: 2px solid #40d3dc;
+  border: 2px solid #88a879;
   padding: 5px;
   border-radius: 10px;
   transition: 1s;
@@ -187,20 +189,25 @@ label,
 }
 
 #radio1:checked ~ .navigation-auto .auto-btn1 {
-  background: #40d3dc;
+  background: #88a879;
 }
 
 #radio2:checked ~ .navigation-auto .auto-btn2 {
-  background: #40d3dc;
+  background: #88a879;
 }
 
 #radio3:checked ~ .navigation-auto .auto-btn3 {
-  background: #40d3dc;
+  background: #88a879;
 }
 
 #radio4:checked ~ .navigation-auto .auto-btn4 {
-  background: #40d3dc;
+  background: #88a879;
 } 
 
 
 /*  */
+
+article p {
+  width: 60%;
+  margin: 30px auto 0 auto;
+}
