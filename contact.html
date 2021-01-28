@@ -1,104 +1,110 @@
-
 <!DOCTYPE html>
 <html>
-  <head>
-  <div class="formulaire">
-  <link rel="stylesheet" href="style-contact.css">
-  <header class="header">
-    <h1 id="title" class="text-center">Contact</h1>
-  </header>
 
-  </head>
-  <body>
+<head>
+    <link rel="stylesheet" href="style-contact.css">
+</head>
 
-    <form>
-      <p>Votre civilité :</p>
-      <div>
-        <input type="radio" id="contactChoice1"
-         name="contact" value="Madame">
-        <label for="contactChoice1">Madame</label>
-    
-        <input type="radio" id="contactChoice2"
-         name="contact" value="">
-        <label for="contactChoice2">Monsieur </label>
-    
-        <input type="radio" id="contactChoice3"
-         name="contact" value="courrier">
-        <label for="contactChoice3">Autre</label>
-      </div>
-    </form>
+<body>
 
-   <form id="projet-site">
-  
+  <div class="contacts">
+
+
+    <div class="adresse">
+      <span class="txt1 p-b-20">
+        Addresse
+      </span>
+
+      <span class="txt1">
+        5 rue de la Baunne Montreuil
+      </span>
+    </div>
+
+
+    <div class="adresse">
+      <span class="txt1 p-b-20">
+        Télephone
+      </span>
+
+      <span class="txt2">
+        069986236879
+      </span>
+    </div>
+
+
+
+    <div class="adresse">
+      <span class="txt1 p-b-20">
+        E-mail
+      </span>
+
+      <span class="txt3">
+        contact@example.com
+      </span>
+    </div>
+  </div>
+
+	<div class="vertical"></div>
+
+
+  <form>
+    <p>Votre civilité :</p>
+    <div class="radiosss">
+      <input type="radio" name="contact" value="email" checked>
+      <label for="contactChoice1">Madame</label>
+    </div>
+    <div class="radiosss">
+      <input type="radio" name="contact" value="ci">
+      <label for="contactChoice2">Monsieur</label>
+    </div>
+    <div class="radiosss">
+      <input type="radio" name="contact" value="courrier">
+      <label for="contactChoice3">Autre</label>
+    </div>
+
+
     <div class="form-group">
       <label id="name-label" for="name">Votre nom</label>
-      <input
-        type="text"
-        name="name"
-        id="name"
-        class="form-control"
-        placeholder="Enter votre nom"
-        required
-  
-      >
+      <input type="text" lass="form-control" placeholder="Enter votre nom">
     </div>
 
     <div class="form-group">
-        <label id="name-label" for="name">Votre prénom</label>
-        <input
-          type="text"
-          name="name"
-          id="name"
-          class="form-control"
-          placeholder="Entrer votre prénom"
-          required
-        > 
+      <label id="name-label" for="name">Votre prénom</label>
+      <input type="text" lass="form-control" placeholder="Enter votre nom">
     </div>
 
     <div class="form-group">
       <label id="email-label" for="email">Votre adresse email</label>
-      <input
-        type="email"
-        name="email"
-        id="email"
-        class="form-control"
-        placeholder="Entrer votre Email"
-        required
-      />
+      <input type="text" lass="form-control" placeholder="Enter votre nom">
     </div>
-    
-   
-    
-    
-
 
 
     <div class="form-group">
       <p>Votre message</p>
-      <textarea
-        id="comments"
-        class="input-textarea"
-        name="comment"
-        placeholder="Entrer votre massage ici..."
-      ></textarea>
+      <textarea id="comments" class="input-textarea" name="comment"
+        placeholder="Entrer votre massage ici..."></textarea>
     </div>
 
     <div class="form-group">
       <button type="submit" id="submit" class="submit-button">
-        Submit
+        Envoyer
       </button>
     </div>
   </form>
-</div>
 
 
- <!-- ... 
+  
+
+
+
+
+  <!-- ... 
 <ul class="social-icons">
     <li><a href="http://www.facebook.com"><img src='' /></a></li>
     <li><a href="http://www.twitter.com"><img src='' /></a></li>
     <li><a href="http://www.youtube.com"><img src='' /></a></li>
 </ul>
-</body>
-</html>
 -->
 
+</body>
+</html>
