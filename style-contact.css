@@ -21,6 +21,8 @@
   flex-direction: row;
   align-items: center;
   margin-top: 50px;
+  
+
 }
 
 .form-group:not(:last-child) {
