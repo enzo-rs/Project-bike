@@ -39,10 +39,15 @@ body {
 }
 
 .banner-content {
-  margin: 0 auto;
+  margin: 0 auto 5px;
 }
 
 
+.flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
 img.banner-background{
   position: absolute;
@@ -61,11 +66,14 @@ img.banner-background{
 }
 
 .banner p {
-  font-size: 1.3rem;
+  font-family: 'Caveat', cursive;
+  font-size: 2.3rem;
   color: #cccccc;
-  margin-bottom: 25px;
   line-height: 2.5rem;
+  margin-left: 10px;
 }
+
+
 /* */
 header {
   text-align: center;
