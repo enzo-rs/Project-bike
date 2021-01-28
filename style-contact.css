@@ -43,6 +43,10 @@ textarea {
   line-height: inherit;
 }
 
+input[type='text'], input[type='email'], textarea {
+  outline: none;
+}
+
 button {
   border: none;
 }
