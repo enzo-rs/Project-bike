@@ -88,13 +88,21 @@ form {
   align-items: flex-start;
   margin-left: 200px;
 }
+
+.container-adresse {
+  display: flex;
+  
+}
+
 .adresse {
   display: flex;
   flex-direction: column;
+  margin-left: 15px;
 }
 
 .adresse span:last-child {
   font-size: 0.8em;
+  
 }
 
 .input-radio,
