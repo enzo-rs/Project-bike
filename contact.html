@@ -1,110 +1,143 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
 
-<head>
-    <link rel="stylesheet" href="style-contact.css">
-</head>
+    <link rel="stylesheet" href="style-contact.css" />
+    <link rel="stylesheet" href="style-apropos.css" />
+    <link rel="stylesheet" href="fontawesome-free-5.15.2-web/css/all.css" />
+  </head>
 
-<body>
+  <body>
+    <nav id="main">
+      <ul>
+        <li class="logo" id="show"></li>
+        <li><a href="index.html">ACCUEIL</a></li>
+        <li><a href="apropos.html">A PROPOS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
 
-  <div class="contacts">
+    <section id="container-form">
+      <div class="contacts">
+        <div class="adresse">
+          <span class="txt1 p-b-20"> Addresse </span>
 
+          <span class="txt1"> 5 rue de la Baunne Montreuil </span>
+        </div>
 
-    <div class="adresse">
-      <span class="txt1 p-b-20">
-        Addresse
-      </span>
+        <div class="adresse">
+          <span class="txt1 p-b-20"> Télephone </span>
 
-      <span class="txt1">
-        5 rue de la Baunne Montreuil
-      </span>
-    </div>
+          <span class="txt2"> 00.00.00.00.00 </span>
+        </div>
 
+        <div class="adresse">
+          <span class="txt1 p-b-20"> E-mail </span>
 
-    <div class="adresse">
-      <span class="txt1 p-b-20">
-        Télephone
-      </span>
+          <span class="txt3"> contact@example.com </span>
+        </div>
+      </div>
 
-      <span class="txt2">
-        069986236879
-      </span>
-    </div>
+      <div class="vertical"></div>
 
+      <form name="form1">
+        <p>Votre civilité :</p>
+        <div class="radios">
+          <div class="radio">
+            <label for="femme">
+            <input type="radio" name="contact" id="femme"/>
+              <span>Femme</span>
+            </label>
+          </div>
+          <div class="radio">
+            <label for="homme">
+            <input type="radio" name="contact" id="homme"/>
+              <span>Homme</span>
+            </label>
+          </div>
+          <div class="radio">
+            <label for="autre">
+            <input type="radio" name="contact" id="autre"/>
+              <span>Autre</span>
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label id="name-label" for="name">Votre nom</label>
+          <input
+            type="text"
+            lass="form-control"
+            placeholder="Enter votre nom"
+            name="lastName"
+            required
+          />
+        </div>
 
+        <div class="form-group">
+          <label id="name-label" for="name">Votre prénom</label>
+          <input
+            type="text"
+            lass="form-control"
+            placeholder="Enter votre nom"
+            name="firstName"
+            required
+          />
+        </div>
 
-    <div class="adresse">
-      <span class="txt1 p-b-20">
-        E-mail
-      </span>
+        <div class="form-group">
+          <label id="email-label" for="email">Votre adresse email</label>
+          <input
+            type="email"
+            lass="form-control"
+            placeholder="Enter votre nom"
+            name="email"
+            required
+          />
+        </div>
 
-      <span class="txt3">
-        contact@example.com
-      </span>
-    </div>
-  </div>
+        <div class="form-group">
+          <p>Votre message</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Entrer votre massage ici..."
+          ></textarea>
+        </div>
 
-	<div class="vertical"></div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Envoyer
+          </button>
+        </div>
+      </form>
+    </section>
 
+    <footer>
+      <div class="icon">
+        <a href="" class="icon-item">
+          <i class="fab fa-instagram"></i>
+        </a>
 
-  <form>
-    <p>Votre civilité :</p>
-    <div class="radiosss">
-      <input type="radio" name="contact" value="email" checked>
-      <label for="contactChoice1">Madame</label>
-    </div>
-    <div class="radiosss">
-      <input type="radio" name="contact" value="ci">
-      <label for="contactChoice2">Monsieur</label>
-    </div>
-    <div class="radiosss">
-      <input type="radio" name="contact" value="courrier">
-      <label for="contactChoice3">Autre</label>
-    </div>
+        <a href="" class="icon-item">
+          <i class="fab fa-facebook-square"></i>
+        </a>
 
+        <a href="" class="icon-item">
+          <i class="fab fa-twitter"></i>
+        </a>
 
-    <div class="form-group">
-      <label id="name-label" for="name">Votre nom</label>
-      <input type="text" lass="form-control" placeholder="Enter votre nom">
-    </div>
+        <a href="" class="icon-item">
+          <i class="fab fa-pinterest"></i>
+        </a>
+      </div>
 
-    <div class="form-group">
-      <label id="name-label" for="name">Votre prénom</label>
-      <input type="text" lass="form-control" placeholder="Enter votre nom">
-    </div>
+      <p>Enzo-Meryem-Esther © 2021. Tous droits réservés.</p>
+    </footer>
 
-    <div class="form-group">
-      <label id="email-label" for="email">Votre adresse email</label>
-      <input type="text" lass="form-control" placeholder="Enter votre nom">
-    </div>
-
-
-    <div class="form-group">
-      <p>Votre message</p>
-      <textarea id="comments" class="input-textarea" name="comment"
-        placeholder="Entrer votre massage ici..."></textarea>
-    </div>
-
-    <div class="form-group">
-      <button type="submit" id="submit" class="submit-button">
-        Envoyer
-      </button>
-    </div>
-  </form>
-
-
-  
-
-
-
-
-  <!-- ... 
-<ul class="social-icons">
-    <li><a href="http://www.facebook.com"><img src='' /></a></li>
-    <li><a href="http://www.twitter.com"><img src='' /></a></li>
-    <li><a href="http://www.youtube.com"><img src='' /></a></li>
-</ul>
--->
-
-</body>
+    <script src="index-2.js"></script>
+  </body>
 </html>

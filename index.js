@@ -1,5 +1,5 @@
 /* Sticky Nav */
-let nav  = document.querySelector('#main');
+let nav = document.querySelector('#main');
 let lost = document.querySelector('#show');
 let lastPos = 0;
 topPos = nav.offsetTop;
@@ -20,8 +20,7 @@ window.addEventListener('scroll', () => {
   lastPos = window.scrollY;
   if (lastPos >= topPos) {
     modify();
-  }
-  else {
+  } else {
     reset();
   }
 })
@@ -29,15 +28,15 @@ window.addEventListener('scroll', () => {
 
 /* Automatic slider */
 var counter = 1;
-    setInterval(function(){
-      document.querySelector('#radio' + counter).checked = true;
-      counter++;
-      if(counter > 4){
-        counter = 1;
-      }
-    }, 5000);
+setInterval(function () {
+  document.querySelector('#radio' + counter).checked = true;
+  counter++;
+  if (counter > 4) {
+    counter = 1;
+  }
+}, 5000);
 
 
 
 
-    
+
