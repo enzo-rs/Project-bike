@@ -33,6 +33,11 @@
 
 .form-group input {
   width: 70%;
+  font-size: 0.9em;
+}
+
+.form-group textarea {
+  font-size: 0.9em;
 }
 
 input,
