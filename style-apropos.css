@@ -191,7 +191,7 @@ h2 {
     top: 100%;
     opacity: 0;
     font-style: italic;
-    transition: opacity 0.5s;
+    transition: opacity 0.5s ease-in;
 
 }
 

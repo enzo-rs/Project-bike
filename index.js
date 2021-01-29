@@ -1,13 +1,13 @@
 /* Sticky Nav */
 let nav = document.querySelector('#main');
 let lost = document.querySelector('#show');
-let lastPos = 0;
-topPos = nav.offsetTop;
+topNav = nav.offsetTop;
 
 function modify() {
   lost.style.maxWidth = "191px";
-  document.body.style.paddingTop = nav.offsetHeight + 'px';
+  document.body.style.paddingTop = nav.offsetHeight + 'px'; // modification qui permet d'éviter l'effet saccadé
   nav.classList.add("fixed-nav");
+
 }
 
 function reset() {
@@ -17,8 +17,8 @@ function reset() {
 }
 
 window.addEventListener('scroll', () => {
-  lastPos = window.scrollY;
-  if (lastPos >= topPos) {
+  let lastPos = window.scrollY;
+  if (lastPos >= topNav) {
     modify();
   } else {
     reset();
